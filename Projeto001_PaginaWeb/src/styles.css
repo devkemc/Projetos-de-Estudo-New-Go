@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    background: rgb(102, 102, 102);
+    color: white;
+}
+header{
+    display: flex;
+    justify-content:flex-start;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background: #333;
+    color: white;
+    align-items: center;
+    width: 100%;
+}    
+
+header img{
+    height: 2rem;
+    border-radius: 10px;
+}
+header > a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+nav a{
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+    
+}
+a:hover{
+    color: aquamarine;
+
+}
+
+.conteudo{
+    display: flex;
+    margin: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.parceiros h2{
+    color: rgb(250, 86, 86);
+}
+
+.contato{
+    border: 1px solid black;
+    border-radius: 8px;
+    background: rgb(187, 187, 187);
+    color: black;
+    padding: 1rem;
+
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudoProduto{
+    margin: 1rem;
+}
+
+.contato form input{
+    width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+.contato form textarea{
+    width: 80%;
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin: 1rem 0;
+}
+button{
+    padding: 10px;
+	width: 20%;
+	margin: 0  auto;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	background: #00875f;
+	cursor: pointer;
+}
+button:hover{
+    background: #00B37E;
+}
+
+.produtos img{
+    width: 9.3rem;
+    height: 12.5rem;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background: #333;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+footer img{
+    width: 3rem;
+    height: 3rem;
+}
+footer a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
