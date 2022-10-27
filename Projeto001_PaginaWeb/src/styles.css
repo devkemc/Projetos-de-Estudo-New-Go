@@ -16,6 +16,10 @@ body{
     color: white;
     width: 100%;
 }  
+#imagemComp{
+    width: auto;
+    height: 20rem;
+}
 .iconeHome img{
     height: 2rem;
     color: #00B37E;
@@ -45,6 +49,7 @@ a:hover{
 .conteudo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1.5rem;
     
 }
@@ -54,9 +59,6 @@ main{
     margin: 1.5rem;
 }
 
- h2{
-    color: rgb(0, 7, 112);
-}
 #parceiros img{
     width: 12.5rem;
     height: 9.3rem;
@@ -64,10 +66,10 @@ main{
 }
 
 #contato{
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 8px;
-    background: rgb(187, 187, 187);
-    color: black;
+    background: rgb(230, 230, 230);
+    color: #333;
     padding: 1rem;
 
 }
@@ -76,14 +78,16 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5rem 0;
 }
 #contato form input{
     width: 80%;
 	margin: 0 auto;
-	padding: 1.6rem;
+	padding: 1rem;
 	border: none;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1.3rem;
 	border-radius: 50px;
+    
 }
 #contato form textarea{
     width: 80%;
@@ -98,12 +102,12 @@ main{
 }
 .conteudoProduto{
     flex: 2;
-    background: #C0C0C0;
+    background:rgb(230, 230, 230);
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: 3rem 1rem;
     border: 1px solid transparent;
     border-radius: 30px;
     padding: 1rem;
@@ -112,14 +116,36 @@ main{
     transform: translateX(0) scale(1.15);
     transition: 0.8s;
 }
+#imagemHome img{
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0 3.5rem;
+}
+
 #quemsomos img{
-    width: 79.5rem;
-    height: 19.9rem;
+    width: 100%;
+    height: 100%;
 }
+
 #quemsomos section{
+    flex: 2;
     padding: 1rem;
-    margin: 1rem;
+    margin: 3rem 0;
 }
+
+#conteudoQuem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textoQuem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 button{
     padding: 0.625rem;
     text-align: center;
@@ -133,11 +159,12 @@ button{
 	background: #00875f;
 	cursor: pointer;
 }
+
 button:hover{
     background: #00B37E;
 }
 
-.produtos img{
+#produtos img{
     width: 9.3rem;
     height: 12.5rem;
 }
@@ -151,9 +178,10 @@ footer{
     color: white;
     align-items: center;
     width: 100%;
+    margin: 7rem 0 0 0;
 }
 #redesSociais{
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -175,11 +203,12 @@ footer a{
     text-decoration: none;
 }
 #iconeFooter{
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.8rem;
+    justify-content: center;
+    font-size: 80%;
 }
 #iconeFooter img{
     height: 3rem;
@@ -190,12 +219,18 @@ footer a{
         font-size: 80%;
     }
     header{
-        display: flex;
+
         flex-direction: column;
     }
     .conteudo{
-        display: flex;
+
         flex-direction: column;
         
+    }
+    footer{
+        flex-direction: column;
+    }
+    #conteudoQuem{
+        flex-direction: column;
     }
 }
