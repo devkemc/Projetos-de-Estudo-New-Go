@@ -1,8 +1,11 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin-top: 3rem;
     margin: 0;
-    background: rgb(102, 102, 102);
-    color: white;
+    background:linear-gradient(to bottom,white,#E1E2E1);
+    color:white;
     font-family: 'Roboto' , sans-serif;
 }
 .cabecalho{
@@ -12,7 +15,7 @@ body{
     justify-content:space-between;
     padding: 1.25rem;
     box-sizing: border-box;
-    background: #333;
+    background: linear-gradient(45deg,black,#232249,#006cb5);
     color: white;
     width: 100%;
 }  
@@ -44,51 +47,70 @@ nav a{
     
 }
 a:hover{
-    color:rgb(104, 104, 105);
+    color:#14a036;
+    transform: translateX(0) scale(1.15);
+    transition: 0.8s;
 
 }
 
 .conteudo{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     margin: 1.5rem;
     
 }
 main{
+    scroll-margin-block-start: 7rem;
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
+}
+
+#parceiros{
+    scroll-margin-block-start: 4.7rem;
+    background: #004285;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 4rem;
 }
 
 #parceiros img{
     width: 12.5rem;
     height: 9.3rem;
-    margin: 5rem;
+    margin: 1rem;
 }
 
 #contato{
-    border: 1px solid transparent;
-    border-radius: 8px;
-    background: rgb(230, 230, 230);
-    color: #333;
+    background: #001b4b;
+    color: white;
     padding: 1rem;
+    scroll-margin-block-start: 4.7rem;
+    border-radius: 20px;
 
 }
 
+#conteudoContato{
+    display: flex;
+}
+
+
 #contato form{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
 #contato form input{
     width: 80%;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 0.5rem;
 	border: none;
 	margin-bottom: 1.3rem;
-	border-radius: 50px;
+	border-radius: 20px;
+    background: #001231;
+    color: white;
     
 }
 #contato form textarea{
@@ -98,19 +120,38 @@ main{
     height: 6rem;
     padding: 1rem;
     border-radius: 8px;
-    color: var(--gray-100);
+    color: white;
     line-height: 1.4;
     margin: 1rem 0;
+    background: #001231;
+}
+#endereco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem;
+}
+#endereco img{
+    height:65%;
+    width:100%;
+}
+#endereco strong{
+    margin-bottom: 2rem;
+
+}
+#endereco a:hover{
+    transform: translateX(0) scale(1.05);
+    transition: 0.9s;
 }
 .conteudoProduto{
-    flex: 2;
-    background:rgb(230, 230, 230);
+    flex: 1 ;
+    background:#c9c9c9;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 3rem 1rem;
-    border: 1px solid transparent;
+    box-shadow: 9px 4px 10px gray;
     border-radius: 30px;
     padding: 1rem;
 }
@@ -118,22 +159,32 @@ main{
     transform: translateX(0) scale(1.15);
     transition: 0.8s;
 }
-#imagemHome img{
+#home{
+    scroll-margin-block-start: 5rem;
+    width: 100%;
+    height: 100vh;
+}
+#home img{
     width: 100%;
     height: 100%;
-    margin: 2rem 0 3.5rem;
-    border-radius: 10px;
 }
-
+#quemsomos{
+    scroll-margin-block-start: 4.7rem;
+    background:#004285;
+    padding: 2rem ;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+}
 #quemsomos img{
     width: 100%;
     height: 100%;
+    
 }
 
 #quemsomos section{
     flex: 2;
     padding: 1rem;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 #conteudoQuem{
@@ -142,7 +193,7 @@ main{
     justify-content: center;
 }
 #conteudoQuem img{
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 #textoQuem{
@@ -169,7 +220,10 @@ button{
 button:hover{
     background: #00B37E;
 }
-
+#produtos{
+    scroll-margin-block-start: 5rem;
+    color: black;
+}
 #produtos img{
     width: 9.3rem;
     height: 12.5rem;
@@ -180,7 +234,7 @@ footer{
     align-items: center;
     padding: 1.25rem;
     box-sizing: border-box;
-    background: #333;
+    background:black;
     color: white;
     align-items: center;
     width: 100%;
@@ -238,5 +292,14 @@ footer a{
     }
     #conteudoQuem{
         flex-direction: column;
+    }
+    #home{
+        height: 50%;
+    }
+    #conteudoContato{
+        flex-direction: column;
+    }
+    #endereco{
+        margin:0;
     }
 }
